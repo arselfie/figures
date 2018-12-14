@@ -7,8 +7,9 @@ public class Romb extends Figure {
     }
 
     @Override
-    public void calculateSquare(Figure figure) {
-        double square = figure.sideLength * figure.height;
+    public void calculateSquare() {
+        
+        double square = getSideLength() * getHeight();
         System.out.println(square);
     }
 

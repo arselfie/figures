@@ -12,15 +12,12 @@ public class Triangle extends Figure {
         super(null, 0, 0);
     }
 
- 
     @Override
-    public void calculateSquare(Figure figure) {
-        if (Objects.isNull(figure)) {
-         throw new NullPointerException();
-        }
-        double square =0.5*figure.getSideLength()*figure.getHeight();
+    public void calculateSquare() {
+
+        double square = 0.5 * getSideLength() * getHeight();
         System.out.println("Square :" + square);
-        
-    }    
-    
+
+    }
+
 }

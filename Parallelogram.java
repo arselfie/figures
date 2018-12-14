@@ -9,11 +9,9 @@ public class Parallelogram extends Figure {
     }
 
     @Override
-    public void calculateSquare(Figure figure) {
-        if (Objects.isNull(figure)) {
-         throw new NullPointerException();
-        }
-        double square = figure.sideLength * figure.height;
+    public void calculateSquare() {
+        
+        double square = getSideLength() * getHeight();
         System.out.println(square);
     }
 

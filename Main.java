@@ -6,21 +6,21 @@ public class Main {
 
         Triangle triangle = new Triangle("triangle", 10, 5);
 
-        triangle.calculateSquare(triangle);
+        triangle.calculateSquare();
 
-        Parallelogram parallelogram = new Parallelogram("parallelogram", 10, 5);
+        Parallelogram parallelogram = new Parallelogram("name", 5, 10);
 
-        parallelogram.calculateSquare(parallelogram);
+        parallelogram.calculateSquare();
 
-        Romb romb = new Romb("romb", 10, 15);
-
-        romb.calculateSquare(romb);
-
-        
-        
-        
-        // как написать тест для войд методов?
+        // как написать тест для войд методов?  -Использую рулу:
+        //в тест методе создаю 
+//        @Rule
+//        public final SystemOutRule outRule = new SystemOutRule().enableLog();
+// а затем уже в тест методе ожидаю в логе увидеть стринг
+//String log = outRule.getLog();
+//        Assert.assertTrue(log.contains("Square :25.0"));
         // как избегать дурацкой конструкции в майне triangle.calculateSquare(triangle),
+        // просто использую геттер(перемножаю геттеры и не передаю в метод ничего)      
         // parallelogram.calculateSquare(parallelogram), romb.calculateSquare(romb);
         //как добавить дефолтный метод и его реализацию
     }

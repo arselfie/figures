@@ -32,10 +32,8 @@ abstract class Figure implements Calculatable{
     }
 
     @Override
-    public void calculateSquare(Figure figure) {
-        if (Objects.isNull(figure)) {
-         throw new NullPointerException();
-        }
+    public void calculateSquare() {
+        
     }
 
     
